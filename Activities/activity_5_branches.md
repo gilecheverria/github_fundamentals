@@ -1,4 +1,4 @@
-# Activity name
+# Git branching
 
 Now that we have the local repository ready on our computer, we can start working. Surely now you are wondering, if several people participate in the same repository, then how can each person carry out their own work without affecting the progress of the others?
 
