@@ -3,7 +3,7 @@
 
 *Objective*
 
-## Description
+## Overview
 
 General description and activity overview.
 
