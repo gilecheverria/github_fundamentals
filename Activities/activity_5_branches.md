@@ -15,8 +15,7 @@ In this activity, you will:
 1. [Create branches](#creating-branches)
 2. [Create commits in a new branch](#create-a-commit-in-a-new-branch)
 3. [Merge branches](#merge-branches)
-4. Create pull requests
-5. Deleting branches
+4. Deleting branches
 
 ## Steps
 
@@ -187,12 +186,99 @@ In github, we can see that the file should be in the main branch:
 
 ![git push finish](.images/5_branching/5_git_branch_merge_finish.png)
 
+### Deleting branches
+
+Once you’ve finished working on a branch and have merged it into the main code base, you’re free to delete the branch without losing any history:
+
+```bash
+$ git branch -d {branch name}
+```
+
+However, if the branch hasn’t been merged, the above command will output an error message:
+
+```
+error: The branch '{branch name}' is not fully merged. If you are sure you want to delete it, 
+run 'git branch -D {branch name}'.
+```
+
+This protects you from losing access to that entire line of development. If you really want to delete the branch (e.g., it’s a failed experiment), you can use the capital -D flag:
+
+```bash
+git branch -D {branch name}
+```
+
+Since we merged the work on develop into main, we can safely delete it:
+
+1. First check the branches we have with the **git branch** command.
+
+```bash
+$ git branch -a
+```
+
+The **-a** parameter, shows both the local branches, and the remote branches. This may be usefull once you work with other people and need work from their branches. Sometimes, you may not have a local copy of a remote branch.
+
+![git delete 1](.images/5_branching/5_delete_1.png)
+
+2. The remote branches should match the one in github:
+
+![git remote branches](.images/5_branching/5_delete_2.png)
+
+3. Make sure you are in the main branch. Then, use the **git branch** command to delete the **develop** branch:
+
+```bash
+$ git branch -d develop
+```
+
+![git delete develop](.images/5_branching/5_delete_3.png)
+
+Note that the command deletes the local branch, not the remote branch. There are two ways we can use to delete the remote branch: using terminal, and using github.
+
+#### Deleting a remote branch in github
+
+1. In github, select the option to view all branches:
+
+![view branches](.images/5_branching/5_delete_4.png)
+
+2. Look for the branch you want to delete, and press the trash can icon.
+
+![delete branches](.images/5_branching/5_delete_5.png)
+
+3. That should delete the remote branch in github:
+
+![deleted branches](.images/5_branching/5_delete_6.png)
+
+4. However, you still have the tracking information for the develop branch locally. Even after fetching and pulling data from the repository, the tracking information remains:
+
+![tracking branches](.images/5_branching/5_delete_7.png)
+
+5. To remote deleted branches, you have to use the **git fetch** command, with the **--prune** option. The parameter removes, before fetching, any remote-tracking references that no longer exist on the remote. 
+
+![removing tracking branches](.images/5_branching/5_delete_8.png)
+
+#### Deleting a remote branch from terminal
+
+1. In your terminal, make sure you are in the main branch.
+2. Once the develop branch is deleted locally, you can use the **-d** parameter of the **git push** command, to tell github to delete a remote branch.
+
+```bash
+$ git push origin -d develop
+```
+
+3. Confirm that the remote branch is delete with the **git branch -a** command.
+
+![removing tracking branches](.images/5_branching/5_delete_9.png)
+
 ## Finish
 
-*Recap of activity, including expected results.*
+After you finish this activity, you should know:
+
+- What a branch is, and how to create one.
+- How to make a commit to a new branch.
+- How to merge the changes in a new branch to another one. Usually, a development branch to the main branch.
+- How to delete unnecessary branches.
 
 ## Resources
 
 - [Git documentation](https://git-scm.com/docs/)
 - [Atlassian git merge tutorial](Linkhttps://www.atlassian.com/git/tutorials/using-branches/git-merge)
-- [Resource 3](Link)
+- [Deleting remote branches](https://www.freecodecamp.org/news/git-delete-remote-branch/)
