@@ -15,7 +15,7 @@ In this activity, you will:
 1. [Create branches](#creating-branches)
 2. [Create commits in a new branch](#create-a-commit-in-a-new-branch)
 3. [Merge branches](#merge-branches)
-4. Deleting branches
+4. [Deleting branches](#deleting-branches)
 
 ## Steps
 
