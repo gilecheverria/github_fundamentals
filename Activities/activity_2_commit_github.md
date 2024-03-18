@@ -31,13 +31,21 @@ In this activity, you will:
 3. Fill the information on the form that appears:
 
     a. There is no need for a template.
+
     b. Verify that you are the owner of the repository.
+
     c. For the name, use: **git-lab**.
+
     d. In description, type: **Git practice laboratory**.
+
     e. For now, make sure it is **Public**.
+
     f. Don't forget to **Add a README file**.
+
     g. There is no need for a **.gitignore** file for now. We will use those kind of files later.
+
     h. You can use different licences for your project. For now, select **MIT Licence**.
+
     i. Finally, click the **Create repository** button.
 
     ![Creating a repo 3](.images/2_introduction/2_repository_4.png)

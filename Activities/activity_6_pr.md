@@ -6,7 +6,7 @@ In the previous exercises we have seen how to create, merge, and delete branches
 
 In this activity, you will:
 
-1. [Learn how add contributors to a repository](#adding-collaborators)
+1. [Learn how to add contributors to a repository](#adding-collaborators)
 2. [Practice creating branches, and commits to those branches](#creating-branches-and-commits)
 3. [Merging remote branches made by others to the main branch](#merging-changes-from-the-remote-branches)
 4. [Use github flow to create branches and pull requests](#using-github-flow-to-manage-the-remote-repository)
@@ -23,6 +23,7 @@ Team up with two other people in the classroom. Each one will have a role throug
 1. Decide which person will be the leader, since you will use their repository.
 
 2. **Leader**
+
     a. In your repository, press the Settings button. In the left sidebar, press the Collaborators button. You will be asked for your 2FA code.
 
     ![settings button](.images/6_collaboration/6_collaborate_1.png)
@@ -43,12 +44,19 @@ Team up with two other people in the classroom. Each one will have a role throug
 3. **Participants**
 
     a. You will receive an email with the invitation to the repository. Press the 'View Invitation' button.
+
     b. The Leader's repository will be shown with the invitation. Press the 'Accept Invitation' button.
+
     c. The main menu of the Leader's repository will be displayed. Now you can start working on it.
+
     d. Create a folder on your computer called Laboratory-Branches.
+
     e. From the terminal, go to the address of the folder you just created.
+
     f. In Github, on the right side of the repository, press the green **Clone or download** button. Make sure you use the SSH link to download the repository.
+
     g. Type the command **git clone**. Then, paste the URL you copied from the repository.
+
     h. The remote repository will be cloned to the selected address, creating your local repository.
 
 ### Creating branches and commits
@@ -78,7 +86,9 @@ Team up with two other people in the classroom. Each one will have a role throug
     ```
 
     c. Save the file.
+
     d. Commit your changes to the local repository.
+
     e. Upload your changes and your branch to the remote repository with the following command:
     
     ```bash
@@ -88,7 +98,9 @@ Team up with two other people in the classroom. Each one will have a role throug
 6. **Participants**
 
     a. Open git bash or your terminal.
+
     b. Go to the folder where you cloned the leader's repository.
+
     c. To get all the branches and/or tags from one or more other repositories, along with the objects necessary to complete their histories, use the **git fetch -a** command. 
 
     ```bash
@@ -96,7 +108,9 @@ Team up with two other people in the classroom. Each one will have a role throug
     ```
 
     d. Verify that you have the leader's branch with the **git branch** command.
+
     e. Make sure you are working in your branch: not the main branch, or the leader's branch.
+
     f. In order to get the changes on the leader's branch merged into your branch, use the **git pull** command with additional parameters. You can use the **git pull** command to automatically fetch and then merge that remote branch into your current branch.
 
     ```bash
@@ -104,10 +118,15 @@ Team up with two other people in the classroom. Each one will have a role throug
     ```
 
     g. After the pull, you should have the latest commit that is present on the leader's branch; including the python script. 
+
     h. Open the **operation.py** file.
+
     i. Remeber to check that you are working on your branch.
+
     j. One of the participants should finish the code to display de addition and the substraction. Another participant should delete the comment ```#Display the multiplication```. 
+
     k. Save the changes to the file, and make a commit.
+
     l. Push your changes to the remote repository.
 
 ### Merging changes from the remote branches
@@ -120,23 +139,27 @@ Team up with two other people in the classroom. Each one will have a role throug
     
     You can either:
 
-        - Switch to each branch
-        - Pull the changes
-        - Switch to your branch
-        - Merge the branches
+    - Switch to each branch
+    - Pull the changes
+    - Switch to your branch
+    - Merge the branches
 
     or:
 
-        - Pull the changes directo into your branch
+    - Pull the changes directly into your branch
     
     d. Once you have the changes on your branch, ideally to test the participant's work, you can merge it into the main branch.
+
     e. Before merging with main, make sure you push the changes of your branch to the remote repository.
+
     f. Switch to the main branch, and use the **git merge** command to merge the changes from your branch into main.
+
     g. Upload the changes with the **git push** command.
 
 2. **Participants**
 
     a. To download the changes made to main, switch to the main branch.
+
     b. Get the changes made to the remote repository using **git fetch** and **git pull**:
 
     ```bash
@@ -148,6 +171,7 @@ Team up with two other people in the classroom. Each one will have a role throug
 3. **Everyone**
 
     a. Once the changes are in the main branch both locally in each participant's computer, and remotely on github, you can safely delete the branches.
+
     b. Delete the branch you created, and the corresponding remote branch in github.
 
     
@@ -180,13 +204,17 @@ Based on the previous work you did, we will create new changes using github flow
 1. **Participants**
 
     a. Each participant will work on a specific task:
-        - The first one will create a hello world script in python. The script should print "Hello world". 
-        - The second one will create a goodbye world script in python. The script should print "Goodbye world".
+    - The first one will create a hello world script in python. The script should print "Hello world". 
+    - The second one will create a goodbye world script in python. The script should print "Goodbye world".
+
     b. Select one task, and create a new branch with a name that is related to the work you will be doing. For example: *feature-hello-script*.
+
     c. Switch to the new branch, and complete the task:
-        - Create a new script with the appropriate functionality.
-        - Make a commit, and push the branch to the remote repository.
+    - Create a new script with the appropriate functionality.
+    - Make a commit, and push the branch to the remote repository.
+
     d. Once you have pushed to the remote repository, you can create a pull request.
+
     e. In github, you will see that a new option is available at the top of the repository: you can compare and create a pull request for the branch you just pushed.
 
     ![Create pull request 1](.images/6_collaboration/6_collaborate_5.png)
@@ -208,6 +236,7 @@ Based on the previous work you did, we will create new changes using github flow
     ![Create pr](.images/6_collaboration/6_collaborate_9.png)
 
     f. Start creating a new pull request by using either the previous methods. 
+
     g. Fill the information on the description text box, and then press the **Create pull request** button on the lower right corner.
 
     ![Create pr, finally](.images/6_collaboration/6_collaborate_10.png)
@@ -221,6 +250,7 @@ Based on the previous work you did, we will create new changes using github flow
     ![Review PR](.images/6_collaboration/6_collaborate_11.png)
 
     b. Select the pull request that is opened.
+
     c. You can review the pull request by checking the **Commits** or the **Files changed** tabs. Additionally, you can leave a comment for the PR (for example, if the user missed something in the code). Finally, if the file can be merged automatically, you can just press the **Merge pull request** button.
 
     ![Review PR 2](.images/6_collaboration/6_collaborate_12.png)
