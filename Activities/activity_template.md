@@ -5,7 +5,11 @@
 
 ## Overview
 
-General description and activity overview.
+In this activity, you will:
+
+- Task 1
+- Task 2
+- Task 3
 
 ## Steps
 
@@ -19,7 +23,12 @@ General description and activity overview.
 
 ## Finish
 
-*Recap of activity, including expected results.*
+After you finish this activity, you should know:
+
+- 
+- 
+-
+-
 
 ## Resources
 
