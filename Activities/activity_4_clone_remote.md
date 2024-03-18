@@ -121,6 +121,7 @@ After you finish this activity, you should know:
 
 ## Resources
 
+- [git commands](https://education.github.com/git-cheat-sheet-education.pdf) 
 - [git add documentation](https://git-scm.com/docs/git-add)
 - [git commit documentation](https://git-scm.com/docs/git-commit)
 - [git status documentation](https://git-scm.com/docs/git-status)
