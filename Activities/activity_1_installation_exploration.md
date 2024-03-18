@@ -1,10 +1,10 @@
-# Installing git, and exploring github 
+# Installing git, and exploring github
 
 Before you start using [Git](https://docs.github.com/en/get-started/learning-about-github/github-glossary#git), you have to make it available on your computer. Even if it’s already installed, it’s probably a good idea to update to the latest version. You can either install it as a package or via another installer, or download the source code and compile it yourself.
 
 After you install git, you will create an account in [Github](https://github.com/), and explore the application. GitHub is a collaboration platform that uses Git for versioning. GitHub is a popular place to share and contribute to open-source software.
 
-## Overview 
+## Overview
 
 In this activity, you will:
 
@@ -58,9 +58,9 @@ If you don’t have it installed already, it will prompt you to install it.
 
 ### Configure git on your machine
 
-After the installation, you will need to configure the local environment so that you can start using git. 
+After the installation, you will need to configure the local environment so that you can start using git.
 
-1. In windows, search for a program called **Git bash**, and run it. In macOS, open a **Terminal**. These programs provide an emulation layer for a Git command line experience. 
+1. In windows, search for a program called **Git bash**, and run it. In macOS, open a **Terminal**. These programs provide an emulation layer for a Git command line experience.
 
 2. To verify that the installation was correct, type the command: `git --version`. If it gives us the Git version, then everything was installed correctly.
 
@@ -69,9 +69,9 @@ After the installation, you will need to configure the local environment so that
 3. Run the following commands so that Git knows the information of the user that is interacting with it. Run each command separately, changing the text inside the brackets to both your user name and contact email, respectively. The last command sets a default text editor for use in the terminal; more on that later.
 
 ```bash
-$ git config --global user.name “{Nombre del usuario}”
-$ git config --global user.email “{Email del usuario}”
-$ git config –global core.editor “nano”
+$ git config --global user.name "<your name>"
+$ git config --global user.email "<your email>"
+$ git config --global core.editor "nano"
 ```
 
 For example:
@@ -133,7 +133,7 @@ For more information about SSH, see [Secure Shell on Wikipedia](https://en.wikip
 
 In order to connect to a remote system, certain keys must be authorized to access a system. An SSH key is a credential that uses the SSH protocol. Their function is similar to that of usernames and passwords, but keys are mainly used for automated processes.
 
-Typically two keys are generated for this: a public key and a private key. The private key 
+Typically two keys are generated for this: a public key and a private key. The private key
 stays on the user's computer, while the public key is sent to the server you want to access. In this way, the server will give access to anyone who has the private key that corresponds to the public key it has stored.
 
 When you set up the SSH connection, you will need to generate a new combination of private and public keys. Then, add the private one to the SSH agent, while you add the public SSH key to your account on GitHub before you use the key to authenticate or sign commits.
@@ -154,7 +154,7 @@ This creates a new SSH key, using the provided email as a label.
 ```bash
 Enter file in which to save the key (/c/Users/YOU/.ssh/id_ALGORITHM):[Press enter]
 ```
-At the prompt, it is ideal, albeit optional, to type a secure passphrase. 
+At the prompt, it is ideal, albeit optional, to type a secure passphrase.
 
 ```bash
 > Enter passphrase (empty for no passphrase): [Type a passphrase]
