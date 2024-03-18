@@ -13,6 +13,18 @@ Here is a guide to some of the most commonly used terminal commands. These are t
 - `rmdir <directory>`: removes an empty directory
 - `rm -rf <directory>`: forcefully removes a directory (and its contents)
 
+## Manuals for command options
+
+A very useful command is `man`, which prints the manual for a given command.
+The manual shows all the options and arguments that a command can take.
+
+- `man <command>`
+
+Many commands also accept the options `-h` or `--help`, which will prompt them
+to display the most common usage options:
+
+- `<command> --help`
+
 ## File Management Commands
 
 - `touch <file>`: creates a new empty file with the given name
@@ -78,7 +90,7 @@ grep -v Debug log.txt
 
 This would display every line in `log.txt` *except* those containing "Debug".
 
-## xargs 
+## xargs
 
 The xargs command reads items from standard input (stdin), splits them according to whitespace, and transforms them into arguments for subsequent shell commands. Its primary purpose is automating repetitive tasks, making scripting easier, and processing bulk inputs more manageable.
 
@@ -112,7 +124,7 @@ cat file1.txt file2.txt | less
 
 2. Display the first 10 lines of a long file using head:
 
-``` 
+```
 head -n 10 bigfile.txt
 ```
 
