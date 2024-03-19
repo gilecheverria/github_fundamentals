@@ -2,6 +2,10 @@
 
 Repository with material to teach the basics of git/GitHub
 
+## Activities
+
+We have prepared several labs for you to try and learn how to use git and github. You can find them [here](./Activities/Readme.md).
+
 # References
 
 - [Git Pro Book](https://git-scm.com/book/en/v2)
