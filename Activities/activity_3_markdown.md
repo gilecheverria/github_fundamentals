@@ -61,6 +61,8 @@ Looks like:
 
 [Git pro book](https://git-scm.com/book/en/v2)
 
+#### Tasks
+
 Add the following links to the **References** section of your README.
 
 1. Github documentation: https://docs.github.com/en
@@ -99,6 +101,8 @@ Here are some examples for using relative links to display an image:
 **Note:** The previous table was made using markdown. You can check the raw markdown of this file to see how it was made.
 
 For more information, see "[Relative Links](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#relative-links)."
+
+#### Tasks
 
 Follow the next steps in your repository:
 
@@ -143,6 +147,8 @@ const myVar = "Hello, world!";
 const myVar = "Hello, world!";
 ```
 For more information, see "[Creating and highlighting code blocks](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks)."
+
+#### Tasks
 
 Follow the next steps in your repository:
 
@@ -211,6 +217,8 @@ looks like:
 - [x] #739
 - [ ] https://github.com/octo-org/octo-repo/issues/740
 - [ ] Add delight to the experience when all tasks are complete
+
+#### Tasks
 
 Follow the next steps in your repository:
 
