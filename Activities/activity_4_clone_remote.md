@@ -16,6 +16,9 @@ In this activity, you will:
 
 - [Clone a remote repository in your computer.](#cloning-the-remote-repository)
 - [Making and pushing local commits](#making-and-pushing-local-commits)
+- [Amend a commit](#amend-a-commit)
+- [Unstaging a staged file](#unstaging-a-staged-file)
+- [Unmodifying a Modified File](#unmodifying-a-modified-file)
 
 ## Steps
 
@@ -110,6 +113,139 @@ $ git push -u origin main
 
 ![Github changes](.images/4_clone/4_clone_6.png)
 
+### Amend a commit
+
+At any stage, you may want to undo something. Here, we’ll review a few basic tools for undoing changes that you’ve made. Be careful, because you can’t always undo some of these undos. This is one of the few areas in Git where you may lose some work if you do it wrong.
+
+One of the common undos takes place when you commit too early and possibly forget to add some files, or you mess up your commit message. If you want to redo that commit, make the additional changes you forgot, stage them, and commit again using the **--amend** option:
+
+```bash
+$ git commit --amend
+```
+
+This command takes your staging area and uses it for the commit. If you’ve made no changes since your last commit (for instance, you run this command immediately after your previous commit), then your snapshot will look exactly the same, and all you’ll change is your commit message.
+
+The same commit-message editor fires up, but it already contains the message of your previous commit. You can edit the message the same as always, but it overwrites your previous commit.
+
+As an example, if you commit and then realize you forgot to stage the changes in a file you wanted to add to this commit, you can do something like this:
+
+```bash
+$ git commit -m 'Initial commit'
+$ git add forgotten_file
+$ git commit --amend
+```
+
+You end up with a single commit — the second commit replaces the results of the first.
+
+#### Tasks
+
+1. Create a new file called **forgotten_file.txt**.
+2. Add the file to the staging area.
+3. Use the command `git commit --amend`.
+4. A text editor in the terminal will show up, indicating that you are adding a new file to the previous commit.
+5. Save and close the file.
+6. Use `git log` to verify that you do not have an additional commit. 
+
+You can see the contents of a commit using the `git show <hash>` command. Where `<hash>` is the SHA of the commit.
+
+7. Use the `git show` command to show that the previous commit has the new file.
+
+### Unstaging a Staged File
+
+The next two sections demonstrate how to work with your staging area and working directory changes. The nice part is that the command you use to determine the state of those two areas also reminds you how to undo changes to them. For example, let’s say you’ve changed two files and want to commit them as two separate changes, but you accidentally type `git add *` and stage them both. How can you unstage one of the two? The **git status** command reminds you:
+
+```bash
+$ git add *
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+        new file:   contributing.md
+```
+
+You can use the **git restore** command to unstage a file. For example, to unstage the **contributing.md** file:
+
+```bash
+$ git restore --staged contributing
+```
+After the **git restore**, you remove the file from the staging area, but the changes to the file remain.
+
+The complete process looks like:
+
+![Unstage](.images/4_clone/4_clone_7.png)
+
+#### Tasks
+
+1. Create a new file: **config.json**.
+2. Add the following text to the file:
+
+```json
+{
+  "database": {
+    "host": "localhost",
+    "port": 5432,
+    "name": "mydb",
+    "user": "myuser",
+  },
+  "server": {
+    "host": "0.0.0.0",
+    "port": 3000
+  },
+  "logging": {
+    "level": "info",
+    "file": "./logs/app.log"
+  }
+}
+```
+3. Make a commit with the file.
+4. Now, add an image to the **README.md** file.
+5. Modify the **logging** key, so it looks like this:
+
+```json
+  "logging": {
+    "level": "info",
+    "file": "./logs/app.log",
+    "host": "192.5.5.1"
+  }
+```
+
+6. Add both files to the staging area.
+7. Use the **git restore** command to remove the **config.json** file from the staging area.
+8. Do not commit or modify the **config.json** file any further; we will use it in the next set of tasks.
+
+### Unmodifying a Modified File
+
+What if you realize that you don’t want to keep your changes to the **contributing.md** file? How can you easily unmodify it — revert it back to what it looked like when you last committed (or initially cloned, or however you got it into your working directory)? Luckily, git status tells you how to do that, too. In the last example output, the unstaged area looks like this:
+
+```bash
+$ git status
+On branch main
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   contributing.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base)
+```
+
+You can also use the **git restore** command to discard those changes.
+
+```bash
+$ git restore contributing.md
+```
+
+**IMPORTANT** Note that the git restore does not have a **--staged** parameter. **git restore** is kind of dangerous, because if you use it, any local, uncommited, changes to file are gone. Git replaces the file with the last staged or committed version.
+
+#### Tasks
+
+1. Use the **git restore** command to discard the changes to the **config.json** file.
+2. After you discard the changes to the file, make a commit only with the changes to the **README.md** file.
+
 ## Finish
 
 After you finish this activity, you should know:
@@ -118,6 +254,7 @@ After you finish this activity, you should know:
 - How to track them, or add them to the staging area.
 - How to create local commits.
 - How to sync local changes to the remote repository.
+- How to remove files form the staging area, and how to discard changes to a file.
 
 ## Resources
 
