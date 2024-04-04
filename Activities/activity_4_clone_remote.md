@@ -200,7 +200,7 @@ The complete process looks like:
   }
 }
 ```
-3. Make a commit with the file.
+3. Make a commit with the file, and push the changes to the remote repository.
 4. Now, add an image to the **README.md** file.
 5. Modify the **logging** key, so it looks like this:
 
@@ -245,6 +245,7 @@ $ git restore contributing.md
 
 1. Use the **git restore** command to discard the changes to the **config.json** file.
 2. After you discard the changes to the file, make a commit only with the changes to the **README.md** file.
+3. Push the commits to the remote repository.
 
 ## Finish
 
