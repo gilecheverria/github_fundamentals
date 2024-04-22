@@ -14,3 +14,4 @@ We have prepared several labs for you to try and learn how to use git and github
 - [Github documentation](https://docs.github.com/es)
 - [Github glossary](https://docs.github.com/en/get-started/learning-about-github/github-glossary)
 - [Github foundations course by FreeCodeCamp](https://www.youtube.com/watch?v=Jdc0i7RcBv8)
+- [Microsoft GitHub foundations](https://learn.microsoft.com/en-us/collections/o1njfe825p602p)
