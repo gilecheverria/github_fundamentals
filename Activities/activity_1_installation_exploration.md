@@ -58,7 +58,7 @@ If you don’t have it installed already, it will prompt you to install it.
 
 ### Configure git on your machine
 
-After the installation, you will need to configure the local environment so that you can start using git.
+After the installation, you will need to configure the local environment so that you can start using git. Git comes with a [configuration](https://git-scm.com/docs/git-config) both at the global and the repo (project) level. Most of the time, you'll just use the **global config**.
 
 1. In windows, search for a program called **Git bash**, and run it. In macOS, open a **Terminal**. These programs provide an emulation layer for a Git command line experience.
 
@@ -72,14 +72,19 @@ After the installation, you will need to configure the local environment so that
 $ git config --global user.name "<your name>"
 $ git config --global user.email "<your email>"
 $ git config --global core.editor "nano"
-$ git config --global init.defaultBranch main
 ```
 
 For example:
 
 ![git config](.images/1_installation/1_git_config.png)
 
-4. After that, you can close Git bash, or your terminal.
+4. We're using master as the default branch because it is Git's default. To change it to main, which is GitHub's default, run the following command:
+
+```bash
+$ git config --global init.defaultBranch main
+```
+
+5. After that, you can close Git bash, or your terminal.
 
 ### Create an account on github
 
