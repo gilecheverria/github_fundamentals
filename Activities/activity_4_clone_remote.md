@@ -63,7 +63,7 @@ With this, we can start uploading content to the repository we just created. The
 Let's create a file, add it to the local repository, and then upload it to the remote repository.
 
 1. Inside the repository's directory, create a new file called: **Repo.html**.
-2. Copy the following code inside the file:
+2. Copy the following code inside the file, and save the changes:
 ```html
 <!DOCTYPE HTML>
 <html>
@@ -77,10 +77,9 @@ Let's create a file, add it to the local repository, and then upload it to the r
     </body>
 </html>
 ```
-3. Make sure that the “All files” option is selected in the “Type” field.
-4. Open git bash, or the terminal.
-5. Access the directory where your local repository is located.
-6. Execute the following commands in order:
+3. Open git bash, or the terminal.
+4. Access the directory where your local repository is located.
+5. Execute the following commands in order:
 
 ```bash
 # Shows the current state of the repository. The Repo.html file
