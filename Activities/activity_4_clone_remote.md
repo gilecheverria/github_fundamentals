@@ -50,7 +50,7 @@ $ git clone {ssh url}
 
 Now that we have the local repository ready on our computer, we can start making changes on it.
 
-To upload content to a remote repository branch, files must go through several stages in which the changes that have been made to them are updated and tested. For this we will the following Git commands:
+To upload content to a remote repository branch, files must go through several stages in which the changes that have been made to them are updated and tested. For this we will use the following Git commands:
 
 - **git add {file or directory}**: If the file is already being tracked by the repository, it is added to the staging area. If not, the repository starts tracking the file, and adds it to the staging area.
 - **git commit -m “{Commit description}”**: Register the changes in the local repository's history.
