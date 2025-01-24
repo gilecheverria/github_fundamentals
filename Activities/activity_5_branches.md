@@ -280,5 +280,6 @@ After you finish this activity, you should know:
 ## Resources
 
 - [Git documentation](https://git-scm.com/docs/)
-- [Atlassian git merge tutorial](Linkhttps://www.atlassian.com/git/tutorials/using-branches/git-merge)
+- [Atlassian git merge tutorial](https://www.atlassian.com/git/tutorials/using-branches/git-merge)
 - [Deleting remote branches](https://www.freecodecamp.org/news/git-delete-remote-branch/)
+- [Git branching interactive tutorial](https://learngitbranching.js.org/)
