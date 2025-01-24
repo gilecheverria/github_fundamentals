@@ -112,43 +112,6 @@ $ git push -u origin main
 
 ![Github changes](.images/4_clone/4_clone_6.png)
 
-### Amend a commit
-
-At any stage, you may want to undo something. Here, we’ll review a few basic tools for undoing changes that you’ve made. Be careful, because you can’t always undo some of these undos. This is one of the few areas in Git where you may lose some work if you do it wrong.
-
-One of the common undos takes place when you commit too early and possibly forget to add some files, or you mess up your commit message. If you want to redo that commit, make the additional changes you forgot, stage them, and commit again using the **--amend** option:
-
-```bash
-$ git commit --amend
-```
-
-This command takes your staging area and uses it for the commit. If you’ve made no changes since your last commit (for instance, you run this command immediately after your previous commit), then your snapshot will look exactly the same, and all you’ll change is your commit message.
-
-The same commit-message editor fires up, but it already contains the message of your previous commit. You can edit the message the same as always, but it overwrites your previous commit.
-
-As an example, if you commit and then realize you forgot to stage the changes in a file you wanted to add to this commit, you can do something like this:
-
-```bash
-$ git commit -m 'Initial commit'
-$ git add forgotten_file
-$ git commit --amend
-```
-
-You end up with a single commit — the second commit replaces the results of the first.
-
-#### Tasks
-
-1. Create a new file called **forgotten_file.txt**.
-2. Add the file to the staging area.
-3. Use the command `git commit --amend`.
-4. A text editor in the terminal will show up, indicating that you are adding a new file to the previous commit.
-5. Save and close the file.
-6. Use `git log` to verify that you do not have an additional commit. 
-
-You can see the contents of a commit using the `git show <hash>` command. Where `<hash>` is the SHA of the commit.
-
-7. Use the `git show` command to show that the previous commit has the new file.
-
 ### Unstaging a Staged File
 
 The next two sections demonstrate how to work with your staging area and working directory changes. The nice part is that the command you use to determine the state of those two areas also reminds you how to undo changes to them. For example, let’s say you’ve changed two files and want to commit them as two separate changes, but you accidentally type `git add *` and stage them both. How can you unstage one of the two? The **git status** command reminds you:
