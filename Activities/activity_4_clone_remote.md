@@ -188,7 +188,7 @@ The complete process looks like:
     "host": "localhost",
     "port": 5432,
     "name": "mydb",
-    "user": "myuser",
+    "user": "myuser"
   },
   "server": {
     "host": "0.0.0.0",
