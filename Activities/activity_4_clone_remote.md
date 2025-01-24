@@ -226,4 +226,4 @@ After you finish this activity, you should know:
 - [git commit documentation](https://git-scm.com/docs/git-commit)
 - [git status documentation](https://git-scm.com/docs/git-status)
 - [git push documentation](https://git-scm.com/docs/git-push)
-- [Working with remotes](Linkhttps://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes#Fetching-and-Pulling-from-Your-Remotes)
+- [Working with remotes](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes#Fetching-and-Pulling-from-Your-Remotes)
