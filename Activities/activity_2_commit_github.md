@@ -16,7 +16,7 @@ In this activity, you will:
 2. [Make changes to a file in github](#make-changes-to-a-file-in-github)
 3. [Create a new file, and make changes to it](#create-a-new-file-and-make-changes-to-it)
 
-## Steps
+## Tasks
 
 ### Create a new repository
 
