@@ -139,7 +139,7 @@ The complete process looks like:
 
 ![Unstage](.images/4_clone/4_clone_7.png)
 
-#### Tasks
+## Tasks
 
 1. Create a new file: **config.json**.
 2. Add the following text to the file:
@@ -203,7 +203,7 @@ $ git restore contributing.md
 
 **IMPORTANT** Note that the git restore does not have a **--staged** parameter. **git restore** is kind of dangerous, because if you use it, any local, uncommited, changes to file are gone. Git replaces the file with the last staged or committed version.
 
-#### Tasks
+## Tasks
 
 1. Use the **git restore** command to discard the changes to the **config.json** file.
 2. After you discard the changes to the file, make a commit only with the changes to the **README.md** file.
