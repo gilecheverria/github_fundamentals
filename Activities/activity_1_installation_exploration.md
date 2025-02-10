@@ -8,11 +8,11 @@ After you install git, you will create an account in [Github](https://github.com
 
 In this activity, you will:
 
-- [ ] [Install git](#installing-git)
-- [ ] [Configure git on your machine](#configure-git-on-your-machine)
-- [ ] [Create an account on github](#create-an-account-on-github)
-- [ ] [Explore github](#explore-github)
-- [ ] [Configure remote access to github](#configure-remote-access-to-github)
+- [Install git](#installing-git)
+- [Configure git on your machine](#configure-git-on-your-machine)
+- [Create an account on github](#create-an-account-on-github)
+- [Explore github](#explore-github)
+- [Configure remote access to github](#configure-remote-access-to-github)
 
 ## Steps
 
