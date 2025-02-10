@@ -14,7 +14,7 @@ In this activity, you will:
 - [Explore github](#explore-github)
 - [Configure remote access to github](#configure-remote-access-to-github)
 
-## Steps
+## Tasks
 
 ### Installing git
 
