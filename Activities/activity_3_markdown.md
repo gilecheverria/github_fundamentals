@@ -12,8 +12,6 @@ In this activity, you will be able to use markdown to:
 - [Quote code examples.](#code-examples)
 - [Create lists and task lists.](#lists-and-task-lists)
 
-## Steps
-
 ### Headers
 
 **What is _Markdown_?** Markdown is a [lightweight syntax](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) for communicating on GitHub. You can format text to add a heading, lists, **bold**, _italics_, tables, and many other stylings. You can use Markdown in most places around GitHub:
@@ -61,7 +59,7 @@ Looks like:
 
 [Git pro book](https://git-scm.com/book/en/v2)
 
-#### Tasks
+## Tasks
 
 Add the following links to the **References** section of your README.
 
@@ -102,7 +100,7 @@ Here are some examples for using relative links to display an image:
 
 For more information, see "[Relative Links](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#relative-links)."
 
-#### Tasks
+## Tasks
 
 Follow the next steps in your repository:
 
@@ -148,7 +146,7 @@ const myVar = "Hello, world!";
 ```
 For more information, see "[Creating and highlighting code blocks](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks)."
 
-#### Tasks
+## Tasks
 
 Follow the next steps in your repository:
 
@@ -218,7 +216,7 @@ looks like:
 - [ ] https://github.com/octo-org/octo-repo/issues/740
 - [ ] Add delight to the experience when all tasks are complete
 
-#### Tasks
+## Tasks
 
 Follow the next steps in your repository:
 
